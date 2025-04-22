@@ -1,0 +1,16 @@
+
+{
+  "name": "Gereja Katolik Kristus Raja Damai Topo",
+  "short_name": "Kristus Raja",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5a2a27",
+  "icons": [
+    {
+      "src": "assets/kristus-raja.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}
