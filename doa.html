@@ -1,164 +1,177 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doa Katolik</title>
-    <style>
-        /* Reset & base */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doa Katolik</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f4f8;
-            color: #333;
-            line-height: 1.8;
-            padding: 30px 20px;
-        }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      padding: 30px 20px;
+    }
 
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-        header h1 {
-            font-size: 2.5rem;
-            color: #2c3e50;
-            border-bottom: 4px solid #3498db;
-            display: inline-block;
-            padding-bottom: 10px;
-        }
+    header h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      border-bottom: 4px solid #3498db;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
 
-        section {
-            margin-bottom: 35px;
-        }
+    .collapsible {
+      background-color: #2980b9;
+      color: white;
+      cursor: pointer;
+      padding: 15px 20px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
 
-        .prayer-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #2980b9;
-            margin-bottom: 10px;
-            text-align: center;
-        }
+    .active, .collapsible:hover {
+      background-color: #1c6391;
+    }
 
-        .prayer-text {
-            font-size: 1.15rem;
-            color: #444;
-            background-color: #f8fbff;
-            padding: 15px 20px;
-            border-radius: 8px;
-            line-height: 1.9;
-            box-shadow: inset 0 1px 4px rgba(0,0,0,0.05);
-        }
+    .content {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f8fbff;
+      border-radius: 8px;
+      margin-top: 5px;
+    }
 
-        .prayer-text br {
-            line-height: 2;
-        }
+    .prayer-text {
+      padding: 15px 0;
+      font-size: 1.1rem;
+      color: #444;
+      line-height: 1.8;
+    }
 
-        @media (max-width: 600px) {
-            body {
-                padding: 20px 10px;
-            }
+    @media (max-width: 600px) {
+      .collapsible {
+        font-size: 1rem;
+        padding: 12px;
+      }
 
-            .container {
-                padding: 20px;
-            }
-
-            .prayer-title {
-                font-size: 1.3rem;
-            }
-
-            .prayer-text {
-                font-size: 1rem;
-            }
-        }
-    </style>
+      .prayer-text {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Kumpulan Doa Katolik</h1>
-    </header>
+  <header>
+    <h1>Kumpulan Doa Katolik</h1>
+  </header>
 
-    <div class="container">
-        <section>
-            <div class="prayer-title">1. Tanda Salib</div>
-            <p class="prayer-text">Dalam nama Bapa dan Putra dan Roh Kudus. Amin.</p>
-        </section>
+  <div class="container">
+    <button class="collapsible">1. Tanda Salib</button>
+    <div class="content"><div class="prayer-text">Dalam nama Bapa dan Putra dan Roh Kudus. Amin.</div></div>
 
-        <section>
-            <div class="prayer-title">2. Doa Bapa Kami</div>
-            <p class="prayer-text">
-                Bapa kami yang ada di surga,<br>
-                dimuliakanlah nama-Mu,<br>
-                datanglah Kerajaan-Mu,<br>
-                jadilah kehendak-Mu di atas bumi seperti di dalam surga.<br><br>
-                Berilah kami rezeki pada hari ini,<br>
-                dan ampunilah kesalahan kami<br>
-                seperti kami pun mengampuni yang bersalah kepada kami.<br><br>
-                Dan janganlah masukkan kami ke dalam pencobaan,<br>
-                tetapi bebaskanlah kami dari yang jahat.<br>
-                Amin.
-            </p>
-        </section>
-
-        <section>
-            <div class="prayer-title">3. Doa Salam Maria</div>
-            <p class="prayer-text">
-                Salam Maria, penuh rahmat, Tuhan sertamu,<br>
-                terpujilah engkau di antara wanita<br>
-                dan terpujilah buah tubuhmu, Yesus.<br><br>
-                Santa Maria, Bunda Allah,<br>
-                doakanlah kami yang berdosa ini,<br>
-                sekarang dan waktu kami mati.<br>
-                Amin.
-            </p>
-        </section>
-
-        <section>
-            <div class="prayer-title">4. Kemuliaan</div>
-            <p class="prayer-text">
-                Kemuliaan kepada Bapa dan Putra dan Roh Kudus,<br>
-                seperti pada permulaan, sekarang, selalu dan sepanjang segala abad.<br>
-                Amin.
-            </p>
-        </section>
-
-        <section>
-            <div class="prayer-title">5. Aku Percaya (Syahadat Para Rasul)</div>
-            <p class="prayer-text">
-                Aku percaya akan Allah, Bapa yang Mahakuasa, Pencipta langit dan bumi.<br><br>
-                Dan akan Yesus Kristus, Putra-Nya yang tunggal, Tuhan kita,<br>
-                yang dikandung dari Roh Kudus, dilahirkan oleh Perawan Maria;<br>
-                yang menderita sengsara dalam pemerintahan Pontius Pilatus,<br>
-                disalibkan, wafat dan dimakamkan;<br>
-                yang turun ke tempat penantian,<br>
-                pada hari ketiga bangkit dari antara orang mati;<br>
-                yang naik ke surga, duduk di sebelah kanan Allah Bapa yang Mahakuasa;<br>
-                dari situ Ia akan datang mengadili orang hidup dan mati.<br><br>
-                Aku percaya akan Roh Kudus,<br>
-                Gereja Katolik yang kudus,<br>
-                persekutuan para kudus,<br>
-                pengampunan dosa,<br>
-                kebangkitan badan,<br>
-                kehidupan kekal.<br>
-                Amin.
-            </p>
-        </section>
+    <button class="collapsible">2. Doa Bapa Kami</button>
+    <div class="content">
+      <div class="prayer-text">
+        Bapa kami yang ada di surga,<br>
+        dimuliakanlah nama-Mu,<br>
+        datanglah Kerajaan-Mu,<br>
+        jadilah kehendak-Mu di atas bumi seperti di dalam surga.<br><br>
+        Berilah kami rezeki pada hari ini,<br>
+        dan ampunilah kesalahan kami<br>
+        seperti kami pun mengampuni yang bersalah kepada kami.<br><br>
+        Dan janganlah masukkan kami ke dalam pencobaan,<br>
+        tetapi bebaskanlah kami dari yang jahat.<br>
+        Amin.
+      </div>
     </div>
+
+    <button class="collapsible">3. Doa Salam Maria</button>
+    <div class="content">
+      <div class="prayer-text">
+        Salam Maria, penuh rahmat, Tuhan sertamu,<br>
+        terpujilah engkau di antara wanita<br>
+        dan terpujilah buah tubuhmu, Yesus.<br><br>
+        Santa Maria, Bunda Allah,<br>
+        doakanlah kami yang berdosa ini,<br>
+        sekarang dan waktu kami mati.<br>
+        Amin.
+      </div>
+    </div>
+
+    <button class="collapsible">4. Kemuliaan</button>
+    <div class="content">
+      <div class="prayer-text">
+        Kemuliaan kepada Bapa dan Putra dan Roh Kudus,<br>
+        seperti pada permulaan, sekarang, selalu dan sepanjang segala abad.<br>
+        Amin.
+      </div>
+    </div>
+
+    <button class="collapsible">5. Aku Percaya (Syahadat Para Rasul)</button>
+    <div class="content">
+      <div class="prayer-text">
+        Aku percaya akan Allah, Bapa yang Mahakuasa, Pencipta langit dan bumi.<br><br>
+        Dan akan Yesus Kristus, Putra-Nya yang tunggal, Tuhan kita,<br>
+        yang dikandung dari Roh Kudus, dilahirkan oleh Perawan Maria;<br>
+        yang menderita sengsara dalam pemerintahan Pontius Pilatus,<br>
+        disalibkan, wafat dan dimakamkan;<br>
+        yang turun ke tempat penantian,<br>
+        pada hari ketiga bangkit dari antara orang mati;<br>
+        yang naik ke surga, duduk di sebelah kanan Allah Bapa yang Mahakuasa;<br>
+        dari situ Ia akan datang mengadili orang hidup dan mati.<br><br>
+        Aku percaya akan Roh Kudus,<br>
+        Gereja Katolik yang kudus,<br>
+        persekutuan para kudus,<br>
+        pengampunan dosa,<br>
+        kebangkitan badan,<br>
+        kehidupan kekal.<br>
+        Amin.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const coll = document.querySelectorAll(".collapsible");
+    coll.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
