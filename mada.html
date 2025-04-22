@@ -1,10 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gereja Katolik Kristus Raja Damai Topo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    main {
+      padding: 20px;
+    }
+    h2, h3 {
+      color: #2C3E50;
+    }
+    .video-container {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+      height: 0;
+      overflow: hidden;
+      background: #000;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Gereja Katolik Kristus Raja Damai Topo</h1>
+</header>
+
 <main>
   <h2>Selamat Datang</h2>
   <p>Website resmi Gereja Katolik Kristus Raja Damai Topo. Silakan menjelajahi doa dan lagu rohani Katolik.</p>
 
   <h3>Video Kegiatan Gereja</h3>
-  <video width="640" controls>
-    <source src="https://youtu.be/CtQe-MEr54w" type="video/mp4">
-    Browser Anda tidak mendukung pemutar video.
-  </video>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://youtu.be/CtQe-MEr54w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 </main>
+
+</body>
+</html>
